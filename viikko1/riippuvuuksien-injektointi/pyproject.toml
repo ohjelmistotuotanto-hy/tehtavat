@@ -7,7 +7,7 @@ authors = [
 ]
 license = {text = "MIT"}
 readme = "README.md"
-requires-python = "3.12"
+requires-python = "^3.12"
 dependencies = [
 ]
 
@@ -16,6 +16,8 @@ dev = [
     "pytest (>=8.4.2,<9.0.0)"
 ]
 
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
