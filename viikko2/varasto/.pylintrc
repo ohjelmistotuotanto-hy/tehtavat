@@ -1,6 +1,7 @@
 [MASTER]
 
-ignore=tests
+ignore-paths=src/tests
+ignore=single_file_to_ignore.py
 
 [MESSAGE CONTROL]
 
