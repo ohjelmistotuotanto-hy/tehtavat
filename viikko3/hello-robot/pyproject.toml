@@ -1,0 +1,24 @@
+[project]
+name = "hello-robot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Matti Luukkainen",email = "mluukkai@iki.fi"}
+]
+license = {text = "MIT"}
+requires-python = "^3.12"
+dependencies = [
+]
+
+[tool.poetry]
+package-mode = false
+
+[dependency-groups]
+dev = [
+    "robotframework (>=7.3.2,<8.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
