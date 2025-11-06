@@ -6,7 +6,7 @@ from varasto import Varasto
 from tuote import Tuote
 
 class TestKauppa(unittest.TestCase):
-    def test_ostoksen_paaytyttya_pankin_metodia_tilisiirto_kutsutaan(self):
+    def test_maksettaessa_ostos_pankin_metodia_tilisiirto_kutsutaan(self):
         pankki_mock = Mock()
         viitegeneraattori_mock = Mock()
 
