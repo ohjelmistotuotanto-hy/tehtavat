@@ -1,0 +1,22 @@
+[project]
+name = "int-joukko"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Matti Luukkainen",email = "mluukkai@iki.fi"}
+]
+requires-python = "^3.12"
+dependencies = [
+]
+
+[dependency-groups]
+dev = [
+    "pytest (>=9.0.1,<10.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
