@@ -99,6 +99,20 @@ class IntJoukko:
 
         return taulu
 
+    def __str__(self):
+        if self.alkioiden_lkm == 0:
+            return "{}"
+        elif self.alkioiden_lkm == 1:
+            return "{" + str(self.ljono[0]) + "}"
+        else:
+            tuotos = "{"
+            for i in range(0, self.alkioiden_lkm - 1):
+                tuotos = tuotos + str(self.ljono[i])
+                tuotos = tuotos + ", "
+            tuotos = tuotos + str(self.ljono[self.alkioiden_lkm - 1])
+            tuotos = tuotos + "}"
+            return tuotos
+
     @staticmethod
     def yhdiste(a, b):
         x = IntJoukko()
@@ -139,17 +153,3 @@ class IntJoukko:
             z.poista(b_taulu[i])
 
         return z
-
-    def __str__(self):
-        if self.alkioiden_lkm == 0:
-            return "{}"
-        elif self.alkioiden_lkm == 1:
-            return "{" + str(self.ljono[0]) + "}"
-        else:
-            tuotos = "{"
-            for i in range(0, self.alkioiden_lkm - 1):
-                tuotos = tuotos + str(self.ljono[i])
-                tuotos = tuotos + ", "
-            tuotos = tuotos + str(self.ljono[self.alkioiden_lkm - 1])
-            tuotos = tuotos + "}"
-            return tuotos
