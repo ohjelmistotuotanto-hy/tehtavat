@@ -3,7 +3,7 @@ from player_reader import PlayerReader
 from matchers import And, HasAtLeast, PlaysIn
 
 def main():
-    url = "https://studies.cs.helsinki.fi/nhlstats/2023-24/players.txt"
+    url = "https://studies.cs.helsinki.fi/nhlstats/2024-25/players.txt"
     reader = PlayerReader(url)
     stats = Statistics(reader)
 
