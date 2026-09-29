@@ -1,0 +1,49 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build ja paketointi
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+
+# Virtual environments (uv luo .venv-hakemiston)
+.venv/
+venv/
+env/
+.env
+
+# Huom: uv.lock ja .python-version kuuluvat versionhallintaan
+
+# Testaus ja kattavuus
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.tox/
+.nox/
+
+# Työkalujen välimuistit
+.mypy_cache/
+.ruff_cache/
+.pylint.d/
+
+# Robot Framework
+output.xml
+log.html
+report.html
+selenium-screenshot-*.png
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editorit ja käyttöjärjestelmä
+.vscode/
+.idea/
+*.swp
+.DS_Store
