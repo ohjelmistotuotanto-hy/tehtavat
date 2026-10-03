@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8">
+  <title>Laskuri</title>
+</head>
+<body>
+  <h2>Ohtulaskuri</h2>
+  <div>nappia painettu {{ value }} kertaa</div>
+  <form action="/increment" method="POST">
+    <button type="submit">
+      Paina
+    </button>
+  </form>
+  <form action="/reset" method="POST">
+    <button type="submit">
+      Nollaa
+    </button>
+  </form>
+</body>
+</html>

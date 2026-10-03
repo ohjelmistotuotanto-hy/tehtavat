@@ -1,0 +1,11 @@
+[project]
+name = "hello-robot"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "robotframework>=7.3.2",
+]

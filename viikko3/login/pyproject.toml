@@ -1,0 +1,16 @@
+[project]
+name = "login"
+version = "0.1.0"
+description = ""
+requires-python = ">=3.14"
+dependencies = [
+    "flask>=3.1.2",
+]
+
+[dependency-groups]
+dev = [
+    "robotframework>=7.3.2",
+    "requests>=2.32.5",
+    "robotframework-browser>=20.5.0",
+    "robotframework-browser-batteries>=20.5.0",
+]
